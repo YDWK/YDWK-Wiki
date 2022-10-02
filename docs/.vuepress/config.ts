@@ -2,6 +2,6 @@ import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
     lang: 'en-US',
-    title: 'Hello VuePress',
+    title: 'YDWK',
     description: 'Just playing around',
 })

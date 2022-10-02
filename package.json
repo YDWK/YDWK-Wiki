@@ -1,17 +1,17 @@
 {
   "name": "ydwk-wiki",
-  "version": "1.0.0",
-  "description": "A wiki for my discord kotlin wrapper",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A wiki for my custom discord wrapper",
+  "main": "index.ts",
   "repository": "https://github.com/YDWK/YDWK-Wiki.git",
   "author": "Yusuf Arfan Ismail <yusufgamer222@gmail.com>",
-  "license": " Apache-2.0",
-  "private": "false",
-  "devDependencies": {
-    "vuepress": "^2.0.0-beta.50-pre.1"
-  },
+  "license": "Apache-2.0",
+  "private": false,
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
   }
 }
