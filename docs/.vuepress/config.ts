@@ -1,4 +1,7 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
+import {botSearch} from "../../plugins/bot-api";
+import {searchPlugin} from '@vuepress/plugin-search'
+import {palettePlugin} from '@vuepress/plugin-palette'
 
 export default defineUserConfig({
     lang: 'en-US',
@@ -35,5 +38,11 @@ export default defineUserConfig({
     }),
     head: [
         ['link', {rel: 'icon', href: '/ydwk.png'}]
+    ],
+    plugins: [
+        botSearch(),
+        searchPlugin({
+            // options
+        })
     ],
 })
