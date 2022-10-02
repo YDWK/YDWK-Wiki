@@ -30,7 +30,7 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
         // Repo details for "Edit this page on GitHub" footer
         docsRepo: 'YDWK/YDWK-Wiki',
         docsDir: 'docs',
-        docsBranch: 'master',
+        docsBranch: 'main',
         editLink: true,
         editLinkText: 'Edit this page on GitHub'
     }),
