@@ -1,2 +1,0 @@
-# YDWK-Wiki
- YDWK Wiki
