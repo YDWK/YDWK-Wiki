@@ -10,7 +10,7 @@ export default defineUserConfig({
         navbar: [
             {text: 'Home', link: '/'},
             {text: 'Wiki', link: '/wiki/'},
-            {text: 'JavaDocs', link: 'https://ydwk.github.io/YDWK/'},
+            {text: 'KotlinDocs', link: 'https://ydwk.github.io/YDWK/'},
             {text: 'GitHub', link: 'https://github.com/YDWK/YDWK'},
         ],
         sidebarDepth: 1,
