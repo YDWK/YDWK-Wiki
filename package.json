@@ -1,0 +1,19 @@
+{
+  "name": "ydwk-wiki",
+  "version": "0.0.1",
+  "description": "Yusuf&#39;s Discord  Wrapper Kotlin&#39;s wiki",
+  "main": "index.js",
+  "authors": {
+    "name": "Yusuf Arfan Ismail",
+    "email": "yusufgamer222@gmail.com"
+  },
+  "repository": "https://github.com/YDWK/YDWK-Wiki/YDWk-Wiki",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
