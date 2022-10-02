@@ -1,7 +1,6 @@
 "use strict";
 exports.__esModule = true;
 var vuepress_1 = require("vuepress");
-var bot_api_1 = require("../../plugins/bot-api");
 var plugin_search_1 = require("@vuepress/plugin-search");
 var plugin_palette_1 = require("@vuepress/plugin-palette");
 exports["default"] = (0, vuepress_1.defineUserConfig)({
@@ -41,7 +40,6 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
         ['link', { rel: 'icon', href: '/ydwk.png' }]
     ],
     plugins: [
-        (0, bot_api_1.botSearch)(),
         (0, plugin_search_1.searchPlugin)({
             locales: {
                 '/': {
