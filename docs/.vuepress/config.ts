@@ -1,7 +1,7 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
 import {botSearch} from "../../plugins/bot-api";
-import {searchPlugin} from '@vuepress/plugin-search'
-import {palettePlugin} from '@vuepress/plugin-palette'
+import {searchPlugin} from "@vuepress/plugin-search";
+import {palettePlugin} from "@vuepress/plugin-palette";
 
 export default defineUserConfig({
     lang: 'en-US',
@@ -42,7 +42,14 @@ export default defineUserConfig({
     plugins: [
         botSearch(),
         searchPlugin({
-            // options
-        })
+            locales: {
+                '/': {
+                    placeholder: 'Search',
+                },
+            },
+        }),
+        palettePlugin({
+            preset: 'sass'
+        }),
     ],
 })
