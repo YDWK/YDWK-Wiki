@@ -25,6 +25,7 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
                     children: [
                         '/wiki/getting-started/README.md',
                         '/wiki/getting-started/installation.md',
+                        '/wiki/getting-started/sample.md',
                     ]
                 },
                 {
