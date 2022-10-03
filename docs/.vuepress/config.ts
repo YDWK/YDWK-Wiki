@@ -25,6 +25,21 @@ export default defineUserConfig({
                         '/wiki/getting-started/README.md',
                         '/wiki/getting-started/installation.md',
                     ]
+                },
+                {
+                    text: 'Gateway Events',
+                    collapsible: true,
+                    children: [
+                        '/wiki/gateway-events/README.md'
+                    ],
+                },
+                {
+                    text: 'JConfig',
+                    collapsible: true,
+                    children: [
+                        '/wiki/jconfig/README.md',
+                        '/wiki/jconfig/jconfig.md',
+                    ]
                 }
             ]
         },

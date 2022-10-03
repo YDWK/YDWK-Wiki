@@ -2,7 +2,11 @@
 
 # How to install
 
-To install YDWK, add the following to your `build.gradle.kts`:
+## Installing the library
+
+To install YDWK you will need to be using gradle as this a kotlin library not intended for java.
+
+### Gradle Kotlin DSL
 
 ```kotlin
 repositories {
@@ -13,3 +17,17 @@ dependencies {
     implementation("io.github.realyusufismail:ydwk:${project.version}")
 }
 ```
+
+### Gradle Groovy DSL
+
+```groovy
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.github.realyusufismail:ydwk:${project.version}")
+}
+```
+
+

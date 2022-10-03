@@ -1,36 +1,17 @@
 ---
 permalink: /wiki
 ---
+
 # Getting started with YDWK
 
 ## Installation
 
-See [here](/wiki/getting-started/installation) for installation instructions.
+Have a look at the [installation guide](/wiki/getting-started/installation) to get started with YDWK.
 
-## Getting started
+## Creating a bot
 
-See [here](/wiki/getting-started/getting-started) for getting started instructions.
+Have a look at the [sample bot](/wiki/getting-started/sample) to get started with YDWK.
 
-## Events
+## Gateway events
 
-See [here](/wiki/events) for events.
-
-## Slash commands
-
-See [here](/wiki/slash-commands) for slash commands.
-
-## Caching
-
-See [here](/wiki/caching) for caching.
-
-## Rest API
-
-See [here](/wiki/rest-api) for rest api.
-
-## Gateway
-
-See [here](/wiki/gateway) for gateway.
-
-## Intents
-
-See [here](/wiki/gateway/intents) for intents.
+Have a look at the [gateway events](/wiki/gateway-events/README) to get started with YDWK.
