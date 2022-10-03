@@ -14,4 +14,4 @@ Have a look at the [sample bot](/wiki/getting-started/sample) to get started wit
 
 ## Gateway events
 
-Have a look at the [gateway events](/wiki/gateway-events/README) to get started with YDWK.
+Have a look at the [gateway events](/wiki/gateway-events) to get started with YDWK.

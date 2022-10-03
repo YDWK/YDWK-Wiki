@@ -18,4 +18,4 @@ It is built to be similar to discord.js.
 
 JConfig is is library which allows you to set and get values from a config file. It is built to be simple and easy to use.
 
-For more information, check out the special page for JConfig [here](/wiki/jconfig/README).
+For more information, check out the special page for JConfig [here](/wiki/jconfig).
