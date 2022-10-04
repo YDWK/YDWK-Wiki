@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.realyusufismail:ydwk:${project.version}")
+    implementation "io.github.realyusufismail:ydwk:${project.version}"
 }
 ```
 
