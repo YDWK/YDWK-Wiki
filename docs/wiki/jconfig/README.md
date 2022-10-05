@@ -40,7 +40,6 @@ implementation("io.github.realyusufismail:jconfig:1.0.6")
 
 ## Usage
 
-### Creating a config
-
+see [docs/wiki/jconfig/usage.md](docs/wiki/jconfig/usage.md)
 
 

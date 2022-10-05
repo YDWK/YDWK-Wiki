@@ -40,7 +40,7 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
                     collapsible: true,
                     children: [
                         '/wiki/jconfig/README.md',
-                        '/wiki/jconfig/jconfig.md',
+                        '/wiki/jconfig/usage.md',
                     ]
                 }
             ]

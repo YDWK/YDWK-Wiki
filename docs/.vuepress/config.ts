@@ -39,7 +39,7 @@ export default defineUserConfig({
                     collapsible: true,
                     children: [
                         '/wiki/jconfig/README.md',
-                        '/wiki/jconfig/jconfig.md',
+                        '/wiki/jconfig/usage.md',
                     ]
                 }
             ]
