@@ -1,3 +1,9 @@
+---
+keywords:
+- Sample
+- Example
+---
+
 # Sample Bot
 
 To create a bot, you can use the `createDefaultBot` function. This function will create a bot with all recommended

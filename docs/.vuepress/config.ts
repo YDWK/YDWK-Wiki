@@ -3,7 +3,7 @@ import {searchPlugin} from "@vuepress/plugin-search";
 import {palettePlugin} from "@vuepress/plugin-palette";
 
 export default defineUserConfig({
-    lang: 'en-US',
+    lang: 'en-UK',
     title: 'YDWK',
     description: 'The wiki for my kotlin discord wrapper library',
     theme: defaultTheme({
@@ -28,11 +28,14 @@ export default defineUserConfig({
                     ]
                 },
                 {
-                    text: 'Gateway Events',
+                    text: 'Gateway Related',
                     collapsible: true,
                     children: [
-                        '/wiki/gateway-events/README.md'
-                    ],
+                        '/wiki/gateway/README.md',
+                        '/wiki/gateway/intents',
+                        '/wiki/gateway/events',
+                        '/wiki/gateway/cache'
+                    ]
                 },
                 {
                     text: 'JConfig',

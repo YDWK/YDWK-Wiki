@@ -4,7 +4,7 @@ var vuepress_1 = require("vuepress");
 var plugin_search_1 = require("@vuepress/plugin-search");
 var plugin_palette_1 = require("@vuepress/plugin-palette");
 exports["default"] = (0, vuepress_1.defineUserConfig)({
-    lang: 'en-US',
+    lang: 'en-UK',
     title: 'YDWK',
     description: 'The wiki for my kotlin discord wrapper library',
     theme: (0, vuepress_1.defaultTheme)({
@@ -29,10 +29,13 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
                     ]
                 },
                 {
-                    text: 'Gateway Events',
+                    text: 'Gateway Related',
                     collapsible: true,
                     children: [
-                        '/wiki/gateway-events/README.md'
+                        '/wiki/gateway/README.md',
+                        '/wiki/gateway/intents',
+                        '/wiki/gateway/events',
+                        '/wiki/gateway/cache'
                     ]
                 },
                 {

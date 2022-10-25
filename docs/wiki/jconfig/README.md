@@ -1,3 +1,10 @@
+---
+permalink: /wiki
+keywords:
+- JConifg
+- Json
+---
+
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.realyusufismail/jconfig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.realyusufismail/jconfig)
 
 # Getting started with JConfig
@@ -20,7 +27,7 @@ To install JConfig you can use maven or gradle.
 <dependency>
     <groupId>io.github.realyusufismail</groupId>
     <artifactId>jconfig</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
@@ -29,13 +36,13 @@ To install JConfig you can use maven or gradle.
 #### Groovy DSL
 
 ```groovy
-implementation 'io.github.realyusufismail:jconfig:1.0.6'
+implementation 'io.github.realyusufismail:jconfig:1.0.7'
 ```
 
 #### Kotlin DSL
 
 ```kotlin
-implementation("io.github.realyusufismail:jconfig:1.0.6")
+implementation("io.github.realyusufismail:jconfig:1.0.7")
 ```
 
 ## Usage

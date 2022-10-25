@@ -1,3 +1,8 @@
+---
+keywords:
+- JConfig usage
+---
+
 # Usage of JConfig
 
 ## Creating a config
