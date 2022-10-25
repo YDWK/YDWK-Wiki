@@ -1,8 +1,6 @@
 ---
 keywords:
-
 - Events
-
 ---
 
 # Events
