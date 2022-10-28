@@ -21,7 +21,7 @@ will be explained later.
 The recommended way to install Jconfig is through Gradle or Maven. You can also download the latest version from
 the [releases page](https://search.maven.org/artifact/io.github.realyusufismail/jconfig/).
 
-## :package: YDWK Dependency
+## :package: JConfig Dependency
 
 <CodeGroup>
   <CodeGroupItem title="Gradle Groovy DSL" active>
