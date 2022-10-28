@@ -23,4 +23,4 @@ Have a look at the [gateway events](/wiki/gateway/events) to get started with ev
 
 Have a look at the [gateway intents](/wiki/gateway/intents) to use and understand intents.
 
-Conensiding with this is Cache which you will also want to have a look and this can be found [here](/wiki/gateway/cache)
+coinciding with this is Cache which you will also want to have a look and this can be found [here](/wiki/gateway/cache)
