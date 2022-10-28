@@ -61,7 +61,7 @@ dependencies {
 ```groovy
 repositories {
     maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
+        url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
     }
 }
 dependencies {
@@ -74,7 +74,7 @@ dependencies {
 
 ```kotlin
 repositories {
-    maven("https://oss.sonatype.org/content/repositories/snapshots/")
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 }
 dependencies {
     implementation("io.github.realyusufismail:ydwk:${latest-snapshot-version}")
@@ -87,7 +87,7 @@ dependencies {
 ```xml
 <repository>
     <id>snapshots-repo</id>
-    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
 </repository>
 ```
 
