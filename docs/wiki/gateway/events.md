@@ -20,7 +20,7 @@ There is 2 way to use a method. You can use `ydwk.on<Event>` or you can extend `
 | `Ready Event`                                  | Contains the initial state information                                                     |
 | `Resumed Event`                                | Response to Resume                                                                         |
 | `Reconnect Event `                             | Server is going away, client should reconnect to gateway and resume                        |
-| `Invalid Session Event  `                      | Failure response to Identify or Resume valid active session                                |
+| `Invalid Session Event  `                      | Failure response to `Identify` or `Resume` valid active session                            |
 | `Application Command Permissions Update Event` | Application command permission was updated                                                 |
 | `Auto Moderation Rule Create Event      `      | Auto Moderation rule was created                                                           |
 | `Auto Moderation Rule Update Event    `        | Auto Moderation rule was updated                                                           |
@@ -77,5 +77,3 @@ There is 2 way to use a method. You can use `ydwk.on<Event>` or you can extend `
 | `Voice State Update Event                    ` | Someone joined, left, or moved a voice channel                                             |
 | `Voice Server Update Event                   ` | Guild's voice server was updated                                                           |
 | `Webhooks Update Event                       ` | Guild channel webhook was created, update, or deleted                                      |
-
-`
