@@ -11,7 +11,7 @@ intents.
 
 ```kotlin
 fun main() {
-    createDefaultBot("TOKEN")
+    createDefaultBot("TOKEN").build()
 }
 ```
 
@@ -27,7 +27,7 @@ class Bot : ListenerAdapter() {
 }
 
 fun main() {
-    val ydwk = createDefaultBot(JConfigUtils.getString("token"))
+    val ydwk = createDefaultBot(JConfigUtils.getString("token")).build()
     ydwk.addEvent(Bot())
 }
 ```
@@ -36,7 +36,7 @@ or
 
 ```kotlin
 fun main() {
-    val ydwk = createDefaultBot(JConfigUtils.getString("token"))
+    val ydwk = createDefaultBot(JConfigUtils.getString("token")).build()
 
     ydwk.on<ReadyEvent> { println("Ready!") }
 }
