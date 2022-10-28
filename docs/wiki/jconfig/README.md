@@ -1,7 +1,7 @@
 ---
 permalink: /wiki
 keywords:
-- JConifg
+- JConfig
 - Json
 ---
 
@@ -18,35 +18,100 @@ will be explained later.
 
 ## Installation
 
-To install JConfig you can use maven or gradle.
+The recommended way to install Jconfig is through Gradle or Maven. You can also download the latest version from
+the [releases page](https://search.maven.org/artifact/io.github.realyusufismail/jconfig/).
 
-### Maven
+## :package: YDWK Dependency
+
+<CodeGroup>
+  <CodeGroupItem title="Gradle Groovy DSL" active>
+
+```groovy
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation "io.github.realyusufismail:jconfig:${project.version}"
+}
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Gradle Kotlin DSL">
+
+```kotlin
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation("io.github.realyusufismail:jconfig:${project.version}")
+}
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Maven">
 
 ```xml
-
 <dependency>
     <groupId>io.github.realyusufismail</groupId>
     <artifactId>jconfig</artifactId>
-    <version>1.0.7</version>
+    <version>${project.version}</version>
+</dependency>
+```
+  </CodeGroupItem>
+</CodeGroup>
+
+::: details Click to see how to download the snapshot version
+
+<CodeGroup>
+  <CodeGroupItem title="Gradle Groovy DSL" active>
+
+```groovy
+repositories {
+    maven {
+        url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+    }
+}
+dependencies {
+    implementation "io.github.realyusufismail:jconfig:${latest-snapshot-version}"
+}
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Gradle Kotlin DSL">
+
+```kotlin
+repositories {
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+}
+dependencies {
+    implementation("io.github.realyusufismail:jconfig:${latest-snapshot-version}")
+}
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Maven">
+
+```xml
+<repository>
+    <id>snapshots-repo</id>
+    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+</repository>
+```
+
+```xml
+<dependency>
+    <groupId>io.github.realyusufismail</groupId>
+    <artifactId>jconfig</artifactId>
+    <version>${latest-snapshot-version}</version>
+<type>pom</type>
 </dependency>
 ```
 
-### Gradle
-
-#### Groovy DSL
-
-```groovy
-implementation 'io.github.realyusufismail:jconfig:1.0.7'
-```
-
-#### Kotlin DSL
-
-```kotlin
-implementation("io.github.realyusufismail:jconfig:1.0.7")
-```
+ </CodeGroupItem>
+</CodeGroup>
 
 ## Usage
 
-see [docs/wiki/jconfig/usage.md](docs/wiki/jconfig/usage.md)
+see [Usage](/wiki/jconfig/usage)
 
 

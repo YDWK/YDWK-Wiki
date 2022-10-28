@@ -20,7 +20,7 @@ export default defineUserConfig({
             '/wiki/': [
                 {
                     text: 'Getting Started',
-                    collapsible: true,
+                    collapsible: false,
                     children: [
                         '/wiki/getting-started/README.md',
                         '/wiki/getting-started/installation.md',
@@ -29,7 +29,7 @@ export default defineUserConfig({
                 },
                 {
                     text: 'Gateway Related',
-                    collapsible: true,
+                    collapsible: false,
                     children: [
                         '/wiki/gateway/README.md',
                         '/wiki/gateway/intents',
@@ -39,7 +39,7 @@ export default defineUserConfig({
                 },
                 {
                     text: 'JConfig',
-                    collapsible: true,
+                    collapsible: false,
                     children: [
                         '/wiki/jconfig/README.md',
                         '/wiki/jconfig/usage.md',
