@@ -1,9 +1,9 @@
 "use strict";
 exports.__esModule = true;
 var vuepress_1 = require("vuepress");
-var plugin_search_1 = require("@vuepress/plugin-search");
 var plugin_palette_1 = require("@vuepress/plugin-palette");
 var plugin_back_to_top_1 = require("@vuepress/plugin-back-to-top");
+var plugin_docsearch_1 = require("@vuepress/plugin-docsearch");
 exports["default"] = (0, vuepress_1.defineUserConfig)({
     base: undefined,
     lang: 'en-UK',
@@ -67,12 +67,16 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
         ['link', { rel: 'icon', href: '/ydwk.png' }]
     ],
     plugins: [
-        (0, plugin_search_1.searchPlugin)({
-            locales: {
-                '/': {
-                    placeholder: 'Search'
-                }
-            }
+        (0, plugin_docsearch_1.docsearchPlugin)({
+            apiKey: "",
+            appId: "",
+            disableUserPersonalization: undefined,
+            indexName: "",
+            initialQuery: undefined,
+            placeholder: undefined,
+            searchParameters: undefined,
+            translations: undefined
+            // options
         }),
         (0, plugin_palette_1.palettePlugin)({
             preset: 'sass'
