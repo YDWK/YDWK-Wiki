@@ -1,13 +1,14 @@
 ---
 keywords:
-- JConfig usage
+- JConfig
+- usage
 ---
 
 # Usage of JConfig
 
 ## Creating a config
 
-To create a config you will need to use `JCOnfigBuilder` which is a builder class for `JConfig`. You can create a config like this:
+To create a config you will need to use `JConfigBuilder` which is a builder class for `JConfig`. You can create a config like this:
 
 ```kotlin
 val config = JConfigBuilder()
@@ -26,4 +27,3 @@ val config = JConfigBuilder()
 ```
 
 ## Setting values
-coming soon

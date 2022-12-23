@@ -1,5 +1,5 @@
 ---
-permalink: /wiki
+permalink: /docs/gateway
 keywords:
 - gateway
 ---

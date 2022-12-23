@@ -1,8 +1,7 @@
 ---
 keywords:
-
+- gateway
 - Events
-
 ---
 
 # Events
