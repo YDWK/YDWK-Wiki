@@ -1,9 +1,11 @@
 "use strict";
 exports.__esModule = true;
 var vuepress_1 = require("vuepress");
-var plugin_search_1 = require("@vuepress/plugin-search");
 var plugin_palette_1 = require("@vuepress/plugin-palette");
+var plugin_back_to_top_1 = require("@vuepress/plugin-back-to-top");
+var plugin_docsearch_1 = require("@vuepress/plugin-docsearch");
 exports["default"] = (0, vuepress_1.defineUserConfig)({
+    base: undefined,
     lang: 'en-UK',
     title: 'YDWK',
     description: 'The wiki for my kotlin discord wrapper library',
@@ -12,38 +14,44 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
         colorModeSwitch: true,
         navbar: [
             { text: 'Home', link: '/' },
-            { text: 'Wiki', link: '/wiki/' },
-            { text: 'KotlinDocs', link: 'https://ydwk.github.io/YDWK/' },
+            { text: 'Documentation', link: '/docs/' },
+            { text: 'JavaDocs', link: 'https://ydwk.github.io/YDWK/' },
             { text: 'GitHub', link: 'https://github.com/YDWK/YDWK' },
+            { text: 'Discord', link: 'https://discord.com/invite/PCz8ET778U' },
         ],
         sidebarDepth: 1,
         sidebar: {
-            '/wiki/': [
+            '/docs/': [
                 {
                     text: 'Getting Started',
-                    collapsible: false,
+                    collapsible: true,
                     children: [
-                        '/wiki/getting-started/README.md',
-                        '/wiki/getting-started/installation.md',
-                        '/wiki/getting-started/sample.md',
+                        '/docs/README.md',
                     ]
                 },
                 {
-                    text: 'Gateway Related',
-                    collapsible: false,
+                    text: 'Tutorial',
+                    collapsible: true,
                     children: [
-                        '/wiki/gateway/README.md',
-                        '/wiki/gateway/intents',
-                        '/wiki/gateway/events',
-                        '/wiki/gateway/cache'
+                        '/docs/tutorial/README.md',
+                        '/docs/tutorial/basicbot.md',
+                    ]
+                },
+                {
+                    text: 'Gateway',
+                    collapsible: true,
+                    children: [
+                        '/docs/gateway/README.md',
+                        '/docs/gateway/intents.md',
+                        '/docs/gateway/events.md'
                     ]
                 },
                 {
                     text: 'JConfig',
-                    collapsible: false,
+                    collapsible: true,
                     children: [
-                        '/wiki/jconfig/README.md',
-                        '/wiki/jconfig/usage.md',
+                        '/docs/jconfig/README.md',
+                        '/docs/jconfig/usage.md'
                     ]
                 }
             ]
@@ -59,16 +67,21 @@ exports["default"] = (0, vuepress_1.defineUserConfig)({
         ['link', { rel: 'icon', href: '/ydwk.png' }]
     ],
     plugins: [
-        (0, plugin_search_1.searchPlugin)({
-            locales: {
-                '/': {
-                    placeholder: 'Search'
-                }
-            }
+        (0, plugin_docsearch_1.docsearchPlugin)({
+            apiKey: "",
+            appId: "",
+            disableUserPersonalization: undefined,
+            indexName: "",
+            initialQuery: undefined,
+            placeholder: undefined,
+            searchParameters: undefined,
+            translations: undefined
+            // options
         }),
         (0, plugin_palette_1.palettePlugin)({
             preset: 'sass'
         }),
+        (0, plugin_back_to_top_1.backToTopPlugin)() // Back to top button
     ]
 });
 //# sourceMappingURL=config.js.map

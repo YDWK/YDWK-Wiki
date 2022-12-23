@@ -1,8 +1,10 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
 import {searchPlugin} from "@vuepress/plugin-search";
 import {palettePlugin} from "@vuepress/plugin-palette";
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 
 export default defineUserConfig({
+    base: undefined,
     lang: 'en-UK',
     title: 'YDWK',
     description: 'The wiki for my kotlin discord wrapper library',
@@ -11,39 +13,46 @@ export default defineUserConfig({
         colorModeSwitch: true,
         navbar: [
             {text: 'Home', link: '/'},
-            {text: 'Wiki', link: '/wiki/'},
-            {text: 'KotlinDocs', link: 'https://ydwk.github.io/YDWK/'},
+            {text: 'Documentation', link: '/docs/'},
+            {text: 'JavaDocs', link: 'https://ydwk.github.io/YDWK/'},
             {text: 'GitHub', link: 'https://github.com/YDWK/YDWK'},
+            {text: 'Discord', link: 'https://discord.com/invite/PCz8ET778U'},
         ],
         sidebarDepth: 1,
         sidebar: {
-            '/wiki/': [
+            '/docs/': [
                 {
                     text: 'Getting Started',
-                    collapsible: false,
+                    collapsible: true,
                     children: [
-                        '/wiki/getting-started/README.md',
-                        '/wiki/getting-started/installation.md',
-                        '/wiki/getting-started/sample.md',
-                    ]
+                        '/docs/README.md',
+                    ],
+
                 },
                 {
-                    text: 'Gateway Related',
-                    collapsible: false,
+                    text: 'Tutorial',
+                    collapsible: true,
                     children: [
-                        '/wiki/gateway/README.md',
-                        '/wiki/gateway/intents',
-                        '/wiki/gateway/events',
-                        '/wiki/gateway/cache'
-                    ]
+                        '/docs/tutorial/README.md',
+                        '/docs/tutorial/basicbot.md',
+                    ],
+                },
+                {
+                    text: 'Gateway',
+                    collapsible: true,
+                    children: [
+                        '/docs/gateway/README.md',
+                        '/docs/gateway/intents.md',
+                        '/docs/gateway/events.md'
+                    ],
                 },
                 {
                     text: 'JConfig',
-                    collapsible: false,
+                    collapsible: true,
                     children: [
-                        '/wiki/jconfig/README.md',
-                        '/wiki/jconfig/usage.md',
-                    ]
+                        '/docs/jconfig/README.md',
+                        '/docs/jconfig/usage.md'
+                    ],
                 }
             ]
         },
@@ -68,5 +77,7 @@ export default defineUserConfig({
         palettePlugin({
             preset: 'sass'
         }),
-    ],
+
+        backToTopPlugin() // Back to top button
+    ]
 })

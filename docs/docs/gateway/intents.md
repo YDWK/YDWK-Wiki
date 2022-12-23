@@ -1,13 +1,14 @@
 ---
 keywords:
-- Intents
+- gateway
+- intents
 ---
 
 # Intents
 
 Intents are a way to tell the gateway what events you want to receive. You can specify intents when creating a bot with createDefaultBot or createCustomBot.
 
-## Intents
+## List of Intents
 
 | Intent                          | Safe to Disable    | Privileged         | Enabled by Default |
 |---------------------------------|--------------------|--------------------|--------------------|
@@ -29,3 +30,5 @@ Intents are a way to tell the gateway what events you want to receive. You can s
 | `MESSAGE_CONTENT`               | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | `AUTO_MODERATION_CONFIGURATION` | :heavy_check_mark: | :x:                | :x:                |
 | `AUTO_MODERATION_EXECUTION`     | :heavy_check_mark: | :x:                | :x:                |
+
+\* As far as we know, these intents are safe to disable. However, we cannot guarantee that Discord will not change their behavior in the future.
