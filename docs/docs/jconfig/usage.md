@@ -32,16 +32,33 @@ val config = JConfigBuilder()
 
 ## Creating config.json file
 
-The default path is `./config.json` so you will need to create a `config.json` file in the current directory. You can
+The default path is `./` so you will need to create a `config.json` file in the current directory. You can
 change the path by using `setDirectoryPath` as shown above.
 
-An example of a config.json file is 
+An example of a config.json file is
 
 ```json
 {
-  "token" : "TOKEN"
+  "token": "TOKEN"
 }
 ```
 
 ## Getting values
 
+To get a value from the config you can use `get`:
+
+```kotlin
+val config = JConfigBuilder()
+    .build()
+
+val token: String = config.get("token").asString
+
+if (token != null) {
+    println(token)
+} else {
+    println("Token is null")
+}
+```
+
+Here we are getting the value of `token` and converting it to a string. If the value is not bull we print the token
+otherwise we print `Token is null`.
