@@ -1,12 +1,15 @@
 ---
 keywords:
+
 - gateway
 - intents
+
 ---
 
 # Intents
 
-Intents are a way to tell the gateway what events you want to receive. You can specify intents when creating a bot with createDefaultBot or createCustomBot.
+Intents are a way to tell the gateway what events you want to receive. You can specify intents when creating a bot with
+createDefaultBot or createCustomBot.
 
 ## List of Intents
 
@@ -31,7 +34,7 @@ Intents are a way to tell the gateway what events you want to receive. You can s
 | `AUTO_MODERATION_CONFIGURATION` | :heavy_check_mark: | :x:                | :x:                |
 | `AUTO_MODERATION_EXECUTION`     | :heavy_check_mark: | :x:                | :x:                |
 
-
 ::: warning
-\* As far as we know, these intents are safe to disable. However, we cannot guarantee that Discord will not change their behavior in the future.
+\* As far as we know, these intents are safe to disable. However, we cannot guarantee that Discord will not change their
+behavior in the future.
 :::

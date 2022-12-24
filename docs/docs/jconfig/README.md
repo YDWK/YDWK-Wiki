@@ -1,8 +1,10 @@
 ---
 permalink: /docs/jconfig
 keywords:
+
 - JConfig
 - Json
+
 ---
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.realyusufismail/jconfig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.realyusufismail/jconfig)
@@ -51,12 +53,14 @@ dependencies {
   <CodeGroupItem title="Maven">
 
 ```xml
+
 <dependency>
     <groupId>io.github.realyusufismail</groupId>
     <artifactId>jconfig</artifactId>
     <version>${project.version}</version>
 </dependency>
 ```
+
   </CodeGroupItem>
 </CodeGroup>
 
@@ -72,7 +76,7 @@ repositories {
     }
 }
 dependencies {
-    implementation "io.github.realyusufismail:jconfig:${latest-snapshot-version}"
+    implementation "io.github.realyusufismail:jconfig:${latest - snapshot - version}"
 }
 ```
 
@@ -84,7 +88,7 @@ repositories {
     maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 }
 dependencies {
-    implementation("io.github.realyusufismail:jconfig:${latest-snapshot-version}")
+    implementation("io.github.realyusufismail:jconfig:${latest - snapshot - version}")
 }
 ```
 
@@ -92,6 +96,7 @@ dependencies {
   <CodeGroupItem title="Maven">
 
 ```xml
+
 <repository>
     <id>snapshots-repo</id>
     <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
@@ -99,11 +104,12 @@ dependencies {
 ```
 
 ```xml
+
 <dependency>
     <groupId>io.github.realyusufismail</groupId>
     <artifactId>jconfig</artifactId>
     <version>${latest-snapshot-version}</version>
-<type>pom</type>
+    <type>pom</type>
 </dependency>
 ```
 
