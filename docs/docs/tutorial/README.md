@@ -15,7 +15,7 @@ This page will show you how to create a discord application. This is the first s
 To create the application, you need to go to the [Discord Developer Portal](https://discord.com/developers/applications)
 and click on the blue 'New Application' button.
 
-![New Application](/assets/images/docs/tutorial/new-application.png)
+![New Application](assets/images/docs/tutorial/application-page.png)
 
 Once you have clicked on the button, you will be prompted to enter the name of the application. Enter the name of the
 application, click agree to the terms and conditions and then click the 'Create' button.
