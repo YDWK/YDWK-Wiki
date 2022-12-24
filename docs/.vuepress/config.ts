@@ -43,7 +43,15 @@ export default defineUserConfig({
                     children: [
                         '/docs/gateway/README.md',
                         '/docs/gateway/intents.md',
-                        '/docs/gateway/events.md'
+                        '/docs/gateway/events.md',
+                        '/docs/gateway/cache.md',
+                    ],
+                },
+                {
+                    text: 'Rest',
+                    collapsible: true,
+                    children: [
+                        '/docs/rest/README.md'
                     ],
                 },
                 {
