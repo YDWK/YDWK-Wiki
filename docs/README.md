@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /bglogo.png
+heroImage: /ydwk-s.png
 heroText: null
 tagline: An easy-to-use discord wrapper made in kotlin
 actions:
