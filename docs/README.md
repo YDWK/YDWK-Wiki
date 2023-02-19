@@ -2,7 +2,7 @@
 home: true
 heroImage: /ydwk-s.png
 heroText: null
-tagline: Yusuf Discord Wrapper Kotlin, An easy-to-use discord wrapper made in kotlin
+tagline: Yusuf Discord Wrapper Kotlin. An easy-to-use discord wrapper made in kotlin
 actions:
 - text: View Docs →
   link: /docs/
