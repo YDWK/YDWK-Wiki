@@ -12,7 +12,21 @@ keywords:
 
 Events are a way to communicate between different parts of the Discord api.
 
-There is 2 way to use a method. You can use `ydwk.on<Event>` or you can extend `ListenerAdapter()`.
+There is 2 way to use a method. You can use `ydwk.on<Event>` or you can extend one of the Listeners which can be found bellow.
+
+### Listeners
+
+| Listeners Name             | Description                                                                                                                                               |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `GuildListeners`           | Contains all event listeners that are realted to the guild apart from moderation and channels ones wich have a sperate listener interfaces.               |
+| `GuildModerationListeners` | Contains all events listeners related to moderation such as listening for bans.                                                                           |
+| `ChannelListeners`         | Contains all channel listeners for bot guild and non-guild.                                                                                               |
+| `InteractionListeners`     | Contains all application command event listeners and other related interactions such as listening to buttons.                                             |
+| `UserListeners`            | Contains all user realted listeners such check for name updates.                                                                                          |
+| `VoiceListeners`           | Contains all vc realted listeners.                                                                                                                        |
+| `CoreListeners`            | Contains all the events sent out during the connection stages and for other things such as listening for shutdown events generic events or update events. |
+
+To make sure an event listener you simply need to do ```ydwk.awaitReady().addEventListeners(ClassListenersTest())``` with ```ClassListenersTest``` being your class which implments the respective listeners.
 
 ## Event List
 

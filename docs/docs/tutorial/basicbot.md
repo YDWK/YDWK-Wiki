@@ -48,7 +48,7 @@ This when run will start the bot. However, it will not do anything. We need to a
 ## Adding a slash command
 
 To add a slash command, we need to wait for the API to be ready and then add the slash command. To do this, we need to
-use awaitReady function. The function is a suspend function that waits for the API to be ready.
+use ```awaitReady``` function. The function is a suspend function that waits for the API to be ready.
 
 We can use this variable to wait and then add the slash command using the slashBuilder variable. The slashBuilder
 contains all the functions to create a slash command. We will use the 'addSlashCommand' function to add the slash
